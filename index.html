@@ -1,60 +1,74 @@
 <!DOCTYPE html>
 <html>
+
   <head>
-<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,500,700' rel='stylesheet' type='text/css'>
-    <title>FontForge-GUI</title>
-    <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="Fontforge-gui : suggestions for improving the fontforge GUI" />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Fontforge-gui</title>
   </head>
+
   <body>
-<div class="row">
-  <div class="offset2 span10">
-  <hr><h1>The FontForge GUI</h1>
-<h3>Improving the fontforge graphical user interface</h3>
-<hr>
-<h4>Points, curves, and handles</h4>
-<img src="img/X11ScreenSnapz036.png"/>
-<p>Points, curves and handles are at present (above) too small and and 'uneasy' for efficient viewing, differentiating, grabbing, moving, and editing.</p>
-<p>Suggested improvement (below) would be to enlarge the forms, but also to decrease their color saturation. This would make the forms large enough to be functional, but not so 'bold' or 'dominant' in color, so as to become uneasy to view or overly distracting from the glyph curves.</p>
-<p>Points should be opaque so as to aid identification of multiple points when grouped closely together.</p>
-<img src="img/shot.png"/>
-<hr>
-<h4>Basic components</h4>
-<img src="img/drawing-1.svg" width="410px"/>
-<p>(above) Details showing basic components. Curve points are round, HV points are diamonds, tangent points are triangular (arrow) shaped, and corner points are square.</p>
-<p>Bezier handles consist of 60% opaque lines terminating in outlined circles with no fill colour. This allow easier identification of handles when grouped close to other components. The end of the bezier handle centred inside the handle circle denotes the x,y potion of each handle terminal.</p>
-<hr>
-<h4>Differentiating selected components</h4>
-<p>Selected points, curves and handles should be more clearly differentiated from non selected. See use of red curves, points and handles (below).</p>
-<img src="img/selected-basic.svg" width="410px"/>
-<hr>
-<h4>Adding precision</h4>
-<p>To help provide precession information on point location the different components have been designed to be both large enough to enhance accurate identification and easy handling, but also contain elements that can show precise points locations.</p>
-<p>Below we see that the precise location (x,y) of bezier handles, and of bezier points. Note the black arrows are for showing the point and handle locus, they are not part of the GUI.</p>
-<img src="img/precision-1.svg" width="610px"/>
-<img src="img/precision-2.svg" width="610px"/>
-<hr>
-<h4>Easing complexities</h4>
-<p>The classic FontForge GUI tended towards keeping points and handles small, presumably to lessen 'crowding' of elements. However experience of using that interface with type design students is that the elements are so small that they can be overly difficult to see, difficult to differentiate between elements and difficult to grab, manipulate and move. </p>
-<p>A solution could be to offer a dual-functional aspect of these elements. For example with the bezier handles (see below), precise location is provided by the central locus point (the terminal of the line in side the ring) yet the size of the ring provides a large enough object to see identify visually accurately and manipulate with ease.</p>
-<img src="img/complex-1.svg" width="510px"/>
-<p> The same principle applies to points (see below). The grabbing area of the object is provided by the outer element, and the precise location of the point is provided by the line at the centre of the point intersecting with the handle line.</p>
-<img src="img/complex-2.svg" width="510px"/>
-<hr>
-<h4>Easing the effects of crowding #1</h4>
-<p>The opaque nature of handles and points allows visual differentiation between closely position points. See the examples below.</p>
-<img src="img/complex-3.svg" width="710px"/>
-<hr>
-<h4>Easing the effects of crowding #2</h4>
-<p>Large sized points and handles could cause difficulties when they overlap, and their size means their is more room for overlap. However the dual-functional aspect of the elements means this is also not an issue.</p>
-<p>In the examples below we see that a handle becomes active to move when 2 variables are met; (a) the cursor is inside a handle radius, and (b) the locus is closer than any neighbouring locus.</p>
-<p>So in the top example below the cursor is closest to the handle denoted by the red circle at it's locus. In the lower example the cursor is closest to the locus of the neighbouring handle.</p>
-<img src="img/complex-4.svg" width="710px"/>
-<img src="img/complex-5.svg" width="710px"/>
 
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/vernnobile/fontforge-GUI">View on GitHub</a>
 
-</div></div>
-    <script src="http://code.jquery.com/jquery-latest.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+          <h1 id="project_title">Fontforge-gui</h1>
+          <h2 id="project_tagline">suggestions for improving the fontforge GUI</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/vernnobile/fontforge-GUI/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/vernnobile/fontforge-GUI/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h3>Welcome to GitHub Pages.</h3>
+
+<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
+
+<pre><code>$ cd your_repo_root/repo_name
+$ git fetch origin
+$ git checkout gh-pages
+</code></pre>
+
+<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
+
+<h3>Designer Templates</h3>
+
+<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
+
+<h3>Rather Drive Stick?</h3>
+
+<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
+
+<h3>Authors and Contributors</h3>
+
+<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
+
+<h3>Support or Contact</h3>
+
+<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Fontforge-gui maintained by <a href="https://github.com/vernnobile">vernnobile</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
   </body>
 </html>
