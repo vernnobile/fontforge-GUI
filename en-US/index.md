@@ -5,7 +5,7 @@ weight: 0
 title: Improving the fontforge graphical user interface
 ---
 
-<div style="background: white; width: 100%; text-align:center; padding:1em">
+<div class="span10 offset1" style="background: white; width: 100%; text-align:center; padding:1em">
 </div>
 
 <ol class="rectangle-list">
