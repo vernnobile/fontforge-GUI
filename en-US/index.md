@@ -15,7 +15,7 @@ title: Improving the fontforge graphical user interface
     {% if p.weight == weight %}
       <li>
         <a {% if p.url == page.url %}class="active"{% endif %} href="{{ p.url }}">
-          {{ p.title }}
+          {{ fontforge-GUI/p.title }}
         </a>
       </li>
     {% endif %}
