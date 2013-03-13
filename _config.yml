@@ -2,6 +2,6 @@ auto: true
 pygments: true
 markdown: rdiscount
 permalink: none
-url: http://vernnobile.github.com/fontforge-GUI
+url: http://vernnobile.github.com/fontforge-GUI/
 title: The FontForge GUI
 subtitle: Improving the fontforge graphical user interface
