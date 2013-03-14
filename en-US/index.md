@@ -6,7 +6,7 @@ title: Improving the fontforge graphical user interface
 ---
 
 <div class="offset2"> 
-*	<a href="points.html">Curves, points, handles</a>
-*	<a href="undo.html">Undo History Tool</a>
+* [Curves, points, handles](points.html)
+* [Undo History Tool] (undo.html)
 
 </div>
