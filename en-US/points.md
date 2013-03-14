@@ -6,7 +6,7 @@ category: GUI
 title: Points, curves and handles
 ---
 
-
+<div class="offset1">
 <h4>Points, curves, and handles</h4>
 <img src="img/X11ScreenSnapz036.png"/>
 
@@ -68,3 +68,4 @@ In the examples below we see that a handle becomes active to move when 2 variabl
 So in the top example below the cursor is closest to the handle denoted by the red circle at it's locus. In the lower example the cursor is closest to the locus of the neighbouring handle.
 <img src="img/complex-4.svg" width="710px"/>
 <img src="img/complex-5.svg" width="710px"/>
+</div>
